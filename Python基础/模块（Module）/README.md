@@ -8,3 +8,9 @@
 import argparse
 import os
 ```
+
+在这里要注意，以上代码是将整个模块都导入进来。如果想要调用模块*argparse.py*中的类**ArgumentParser**，需要采用如下的书写方式：
+
+```python
+parser = argparse.ArgumentParser()
+```

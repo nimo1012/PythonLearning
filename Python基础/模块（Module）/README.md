@@ -9,8 +9,19 @@ import argparse
 import os
 ```
 
-在这里要注意，以上代码是将整个模块都导入进来。如果想要调用模块*argparse.py*中的类**ArgumentParser**，需要采用如下的书写方式：
+在这里要注意，以上代码是将整个模块都导入进来。如果想要将模块*argparse.py*中的类**ArgumentParser**实例化，需要采用如下的书写方式：
 
 ```python
 parser = argparse.ArgumentParser()
 ```
+
+有的时候我们不想将整个模块都导入进来，就可以这样写：
+
+```python
+from argparse import ArgumentParser
+parser = ArgumentParser()
+```
+
+注意此时将类实例化的书写方式与之前有所不同。
+
+

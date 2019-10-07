@@ -24,4 +24,11 @@ parser = ArgumentParser()
 
 注意此时将类实例化的书写方式与之前有所不同。
 
+## __name__
 
+在许多Python模块中我们都可以发现如下代码：
+
+```python
+if __name__ == '__main__':
+    main()
+```
